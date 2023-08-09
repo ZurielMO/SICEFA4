@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>FARMACIA SICEFA</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="farmacia">
+        <meta name="keywords" content="farmacia,sicefa,sistema,medicamentos">
+        <meta name="author" content="Axolotech, Compañia de Software">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="../style/fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet" type="text/css"/>
+        <link href="../style/fontawesome-free-6.4.0-web/css/brands.css" rel="stylesheet" type="text/css"/>
+        <link href="../style/fontawesome-free-6.4.0-web/css/solid.css" rel="stylesheet" type="text/css"/>
+
+        <link href="../style/estilos2_productos.css" rel="stylesheet" type="text/css"/>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../main.js" type="text/javascript"></script>
+        <script src="../js/funciones_clientes.js" type="text/javascript"></script>
+        <script src="../js/producto.js" type="text/javascript"></script>
+
+    </head>
+
+    <!--VERSION ZURI-->
+
+    <body onload="crearProductos();">
+        <br>
+        <div class="container" style="position: fixed;">
+            <div class="row">
+
+                <div class="col-2 text-end">
+                    <ul class="nav nav-underline">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html" style="color: #14294d;">
+                                <i class="fa-solid fa-house-chimney fa-xl" style="color: #14294d;"></i>
+                                INICIO
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-1 text-start"></div>
+                <div class="col-8 text-start">
+                    <p style="font-size: 400%;"><b>Productos</b></p>
+                </div>
+                <div class="col-1 text-end">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" style="background-color: #2D6895; border-color: #2D6895; align-content: start">
+                            <i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i>
+                            Empleado
+                            <br>
+                            Administrador de Sucursal
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-right-from-bracket fa-2xl" style="color: #4a536d;"></i>
+                                    Cerrar Sesión
+                                </a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <div class="sidebar">
+            <div align="center">
+                <a href="index_productos.html">
+                    <img src="img2/logo.png" alt="logoSicefa" style="width: 100%; height: auto;"/>
+                </a>
+            </div>
+
+            <br><br>
+
+            <a href="index_sucursales.html" style="font-size: large;">
+                <i class="fa-solid fa-users fa-2xl" style="color: #fcfcfc;"></i>
+                Sucursales
+            </a>
+            <br>
+            <a href="#" style="font-size: large;">
+                <i class="fa-solid fa-id-card fa-2xl" style="color: #fcfcfd;"></i>
+                Empleados
+            </a>
+            <br>
+            <a href="#" style="font-size: large;">
+                <i class="fa-solid fa-bag-shopping fa-2xl" style="color: #fcfcfd;"></i>
+                Ventas
+            </a>
+            <br>
+            <a href="#" style="font-size: large;">
+                <i class="fa-solid fa-pills fa-2xl" style="color: #fcfcfd;"></i>
+                Productos
+            </a>
+            <br>
+            <a href="#" style="font-size: large;">
+                <i class="fa-solid fa-cart-flatbed fa-2xl" style="color: #fcfcfd;"></i>
+                Pedidos
+            </a>
+
+        </div>
+
+        <div class="content">
+            <br><br>
+
+            <main role="main" class="col-12">
+
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <ul class="nav nav-pills" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active grey-link" data-bs-toggle="pill" href="#todos">
+                                        Todos
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link grey-link" data-bs-toggle="pill" href="#activos">Activos</a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div id="activos" class="container tab-pane active"><br>
+
+                                </div>
+                                <div id="todos" class="container tab-pane fade"><br>
+
+                                </div>
+
+                            </div>
+                            <hr style="height:4px;border-width:0;color:gray;background-color:gray; width: 50%;">
+                        </div>
+
+
+
+                        <div class="col-sm-4">
+                            <div class="btn-toolbar mb-2 mb-md-0">
+                                <div class="container mt-2">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal" style="background-color: #4EB1CA; border-color: #4EB1CA;">
+                                        Agregar Nuevo
+                                    </button>
+
+
+                                </div>
+
+                                <!-- The Modal -->
+                                <div class="modal" id="myModal">
+                                    <div class="modal-dialog modal-xl">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header" style="background-color: gray;">
+                                                <h4 class="modal-title" style="background-color: gray; color: white;">Agregar Producto</h4>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body d-flex justify-content-center align-items-center text-center">
+                                                <div class="col-lg-12">
+                                                    <br>
+                                                    <ul class="nav nav-underline justify-content-center align-items-center text-center">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#" style="color: #14294d;">
+                                                                <br>
+                                                            </a>
+                                                        </li>
+                                                        <p></p><p></p><p></p><p></p><p></p>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" style="color: #14294d;" onclick="cargarUbicacion(event, 'Zoom')">
+                                                                <i class="fa-solid fa-map-location-dot fa-xl"></i>
+                                                                <br>
+                                                                DATOS DE UBICACIÓN
+                                                            </a>
+                                                        </li>
+                                                        <p></p><p></p><p></p><p></p><p></p>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" style="color: #14294d;" onclick="cargarContacto(event, 'Zoom')">
+                                                                
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <br>
+                                                    <hr style="height:2px;border-width:0;color:gray;background-color:gray; width: 100%;">
+                                                    <br><br><br>
+                                                    <div id="content">
+                                                        <h1>Formulario</h1>
+                                                        <br>
+                                                        <div>
+                                                        <img id="imgFoto" src="" style="with: 156px; height:156px"/>
+                                                        <textarea id="txtaCódigoImagen" style="with: 156px"></textarea>
+                                                        </div>
+                                                        <div>
+                                                            <button id="btnSeleccionarImagen" class="btn btn-outline-success" onclick="leerFoto();"><i class="fas fa-upload"></i>&nbsp;&nbsp;Cargar Imagen</button>
+                                                        </div>
+                                                        <div>
+                                                            <input id="inputFileImagen" type="file" />
+                                                        </div>
+                                                        <div>
+                                                            <label class="labelEstiloF" for="txtIdProd">Id:</label>
+                                                            <input type="text" id="txtIdProd" required readonly><br>
+                                                            <br>
+                                                            <label class="labelEstiloF" for="txtNombreProd">Nombre comercial:</label>
+                                                            <input type="text" id="txtNombreProd" required><br>
+                                                            <br>
+                                                            <label class="labelEstiloF" for="txtFormaFar">Forma Farmaceutica:</label>
+                                                            <input type="text" id="txtFormaFar" required><br>
+                                                            <br>
+                                                            <label class="labelEstiloF" for="txtPresentacion">Presentación:</label>
+                                                            <input type="text" id="txtPresentacion" required><br>
+                                                            <br>
+                                                            <label class="labelEstiloF" for="txtPrincipalIndicacion">Principal Indicación:</label>
+                                                            <input type="text" id="txtPrincipalIndicacion" required><br>
+                                                            <br>
+                                                            <label class="labelEstiloF" for="txtConcentracion">Concentración:</label>
+                                                            <input type="text" id="txtConcentracion" required><br>
+                                                            <br>
+                                                        </div>
+                                                        <div>
+                                                            <label class="labelEstiloF" for="txtNombreGenerico">Nombre Genérico:</label>
+                                                            <input type="text" id="txtNombreGenerico" required><br>
+                                                            <br>
+                                                            <label class="labelEstiloF" for="txtUnidadMedida">Unidad de medida:</label>
+                                                            <input type="text" id="txtUnidadMedida" required><br>
+                                                            <br>
+                                                            <label class="labelEstiloF" for="txtUnidadesEnvase">Unidades de envase:</label>
+                                                            <input type="text" id="txtUnidadesEnvase" required><br>
+                                                            <br>
+                                                            <label class="labelEstiloF" for="txtContraindicaciones">Contraindicaciones:</label>
+                                                            <input type="text" id="txtContraindicaciones" required><br>
+                                                            <br>
+                                                            <label class="labelEstiloF" for="txtPrecioUnitario">Precio Unitario:</label>
+                                                            <input type="text" id="txtPrecioUnitario" required><br>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+
+                                            
+
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn" data-bs-dismiss="modal" style="margin-right: 4px; background-color: #8E9FAC; border-color: #8E9FAC;">
+                                                    Cancelar</button>
+                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" style="background-color: #69A6B6; border-color: #69A6B6;" onclick="AgregarProducto();">Agregar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                        
+                        <div class="modal" id="myModalDos">
+                                    <div class="modal-dialog modal-xl">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header" style="background-color: gray;">
+                                                <h4 class="modal-title" style="background-color: gray; color: white;">Modificar Producto</h4>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body d-flex justify-content-center align-items-center text-center">
+                                                <div class="col-lg-12">
+                                                    <br>
+                                                    <ul class="nav nav-underline justify-content-center align-items-center text-center">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#" style="color: #14294d;">
+                                                                <br>
+                                                            </a>
+                                                        </li>
+                                                        <p></p><p></p><p></p><p></p><p></p>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" style="color: #14294d;" onclick="cargarUbicacion(event, 'Zoom')">
+                                                                <i class="fa-solid fa-map-location-dot fa-xl"></i>
+                                                                <br>
+                                                                DATOS DE UBICACIÓN
+                                                            </a>
+                                                        </li>
+                                                        <p></p><p></p><p></p><p></p><p></p>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" style="color: #14294d;" onclick="cargarContacto(event, 'Zoom')">
+                                                                
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <br>
+                                                    <hr style="height:2px;border-width:0;color:gray;background-color:gray; width: 100%;">
+                                                    <br><br><br>
+                                                    <div id="content">
+                                                        <h1>Formulario</h1>
+                                                        <br>
+                                                        <div>
+                                                        <img id="imgFoto" src="" style="with: 156px; height:156px"/>
+                                                        <textarea id="txtaCódigoImagen" style="with: 156px"></textarea>
+                                                        </div>
+                                                        <div>
+                                                            <button id="btnSeleccionarImagen" class="btn btn-outline-success" onclick="leerFoto();"><i class="fas fa-upload"></i>&nbsp;&nbsp;Cargar Imagen</button>
+                                                        </div>
+                                                        <div>
+                                                            <input id="inputFileImagen" type="file" />
+                                                        </div>
+                                                        <div>
+                                                            <label class="labelEstiloF" for="txtIdProd">Id:</label>
+                                                            <input type="text" id="txtIdProdDos" required readonly><br>
+                                                            <br>
+                                                            <label class="labelEstiloF" for="txtNombreProd">Nombre comercial:</label>
+                                                            <input type="text" id="txtNombreProdDos" required><br>
+                                                            <br>
+                                                            <label class="labelEstiloF" for="txtFormaFar">Forma Farmaceutica:</label>
+                                                            <input type="text" id="txtFormaFarDos" required><br>
+                                                            <br>
+                                                            <label class="labelEstiloF" for="txtPresentacion">Presentación:</label>
+                                                            <input type="text" id="txtPresentacionDos" required><br>
+                                                            <br>
+                                                            <label class="labelEstiloF" for="txtPrincipalIndicacion">Principal Indicación:</label>
+                                                            <input type="text" id="txtPrincipalIndicacionDos" required><br>
+                                                            <br>
+                                                            <label class="labelEstiloF" for="txtConcentracion">Concentración:</label>
+                                                            <input type="text" id="txtConcentracionDos" required><br>
+                                                            <br>
+                                                        </div>
+                                                        <div>
+                                                            <label class="labelEstiloF" for="txtNombreGenerico">Nombre Genérico:</label>
+                                                            <input type="text" id="txtNombreGenericoDos" required><br>
+                                                            <br>
+                                                            <label class="labelEstiloF" for="txtUnidadMedida">Unidad de medida:</label>
+                                                            <input type="text" id="txtUnidadMedidaDos" required><br>
+                                                            <br>
+                                                            <label class="labelEstiloF" for="txtUnidadesEnvase">Unidades de envase:</label>
+                                                            <input type="text" id="txtUnidadesEnvaseDos" required><br>
+                                                            <br>
+                                                            <label class="labelEstiloF" for="txtContraindicaciones">Contraindicaciones:</label>
+                                                            <input type="text" id="txtContraindicacionesDos" required><br>
+                                                            <br>
+                                                            <label class="labelEstiloF" for="txtPrecioUnitario">Precio Unitario:</label>
+                                                            <input type="text" id="txtPrecioUnitarioDos" required><br>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+
+                                            
+
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn" data-bs-dismiss="modal" style="margin-right: 4px; background-color: #8E9FAC; border-color: #8E9FAC;">
+                                                    Cancelar</button>
+                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" style="background-color: #69A6B6; border-color: #69A6B6;" onclick="guadarProducto();">Guardar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+
+                    </div>
+
+                    <br><br>
+
+                    <form class="d-flex" role="search">
+                        <input type="text" class="search-box" id="txtBusquedaProd" placeholder="Buscar..." style="border-radius: 8px; width: 50%;">
+                        <button class="btn btn-secondary" type="button" onclick="buscarProd();">
+                            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                        </button>
+
+                    </form>
+
+                    <br><br>
+
+                    <div class="container mt-6">          
+                        <div class="table-responsive" style="border-radius: 8px;">
+                            <table class="table table-hover table-responsive-xxl">
+                                <thead class="table-secondary" style="text-align: center; font-family: serif; background-color: #D9D9D9;">
+                                    <tr>
+                                        <th>#ID</th>
+                                        <th></th>
+                                        <th>Nombre Generico</th>
+                                        <th>Precio Unitario</th>
+                                        <th>Estatus</th>
+                                        <th>Operación</th>
+                                    </tr>
+                                </thead>
+                                <tbody style="text-align: center; font-family: serif; background-color: #D9D9D9; border-radius: 8px;" id="tbProductos">
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+            </main>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="../style/sweetalert2/sweetalert2.all.min.js" type="text/javascript"></script>
+    </body>
+</html>
+
+

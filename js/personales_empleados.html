@@ -1,0 +1,165 @@
+<div class="container" id="content" style="background-color: #F5F5F5; border-radius: 20px; border-bottom: #14294d;">
+
+    <div class="container text-center">
+        <div class="row justify-content-md-center">
+            <div class="col-4">
+                <br>
+                <div class="container text-center">
+                    <div class="row justify-content-md-center">
+                        <div class="col-1">
+
+                        </div>
+                        <div class="col-10">
+                            <img id="imgFoto" src="" style="width: 156px; height: 156px;"/>
+                        </div>
+                        <div class="col">
+
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="container text-center">
+                    <div class="row justify-content-md-center">
+                        <div class="col-1">
+
+                        </div>
+                        <div class="col-10">
+                            <button id="btnSeleccionarImagen" class="btn btn-outline-secondary" style="width: 256px;"
+                                    onclick="leerFoto();"><i class="fas fa-upload"></i>
+                                &nbsp;&nbsp;Cargar Imagen</button> 
+                        </div>
+                        <div class="col">
+
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="container text-center">
+                    <div class="row justify-content-md-center">
+                        <div class="col-1">
+
+                        </div>
+                        <div class="col-10">
+                            <input id="inputFileImagen" type="file"/>
+                        </div>
+                        <div class="col">
+
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="container text-center">
+                    <div class="row justify-content-md-center">
+                        <div class="col-1">
+
+                        </div>
+                        <div class="col-10">
+                            <label for="fechaIngreso" style="background-color: #6B8CA6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px; width: 100%;">
+                                Fecha de Ingreso:
+                            </label>
+                            <br>
+                            <input type="date" id="fechaIngreso" name="fechaIngreso" class="form-control" style="margin-right: 40px; width: 100%; text-align: center;" required>
+                            <br><br>
+                            <label for="rol" style="background-color: #6B8CA6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px; width: 100%;">
+                                Rol:
+                            </label>
+                            <br>
+                            <select id="rol" name="rol" class="form-select-sm" style="margin-right: 40px; width: 100%; text-align: center;" required>
+                                <option value="emps">Empleado (EMPS)</option>
+                                <option value="adms">Administrador de Sucursal (ADMS)</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+
+                <br>
+
+            </div>
+            <br><br>
+
+            <div class="col-8">
+                <form action="/action_page.php">
+                    <br><br><br>
+                    <div class="input-group">
+                        <label for="txtNombre" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                            Nombre (s):
+                        </label>
+                        <input type="text" id="txtNombre" name="txtNombre" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 5%;" required>
+                        <label for="txtIdEmpleado" style="background-color: #0CA789; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                            Id Empleado:
+                        </label>
+                        <input type="text" id="txtIdEmpleado" name="txtIdEmpleado" class="form-control" placeholder="" style="margin-right: 10px; width: 5%;" disabled="">
+                    </div>
+                    <br><br>
+                    <div class="input-group">
+                        <label for="txtApellidoPaterno" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                            Apellido Paterno:
+                        </label>
+                        <input type="text" id="txtApellidoPaterno" name="txtApellidoPaterno" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 10%;" required>
+                        <label for="txtApellidoMaterno" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                            Apellido Materno:
+                        </label>
+                        <input type="text" id="txtApellidoMaterno" name="txtApellidoMaterno" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 10%;" required>
+                    </div>
+                    <br><br>
+                    <div class="input-group">
+                        <label for="fechaNacimiento" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                            Fecha de Nacimiento:
+                        </label>
+                        <input type="date" id="fechaNacimiento" name="fechaNacimiento" class="form-control" style="margin-right: 40px; width: 2%;" required>
+
+                        <label for="genero" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                            Genero:
+                        </label>
+                        <select id="genero" name="genero" class="form-select" style="margin-right: 10px; width: 2%;" required>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <br><br>
+                    <div class="input-group">
+                        <label for="txtCurp" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                            CURP:
+                        </label>
+                        <input type="text" id="txtCurp" name="txtCurp" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 10%;" required>
+
+                        <label for="txtRfc" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                            RFC:
+                        </label>
+                        <input type="text" id="txtRfc" name="txtRfc" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 10%;" required>
+                    </div>
+                    <br><br>
+                    <div class="input-group">
+                        <label for="txtUsuario" style="background-color: #0CA789; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                            Usuario:
+                        </label>
+                        <input type="text" id="txtUsuario" name="txtUsuario" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 5%;" disabled="">
+                        <label for="txtContrasenia" style="background-color: #0CA789; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                            Contraseña:
+                        </label>
+                        <input type="text" id="txtContrasenia" name="txtContrasenia" class="form-control" placeholder="" style="margin-right: 10px; width: 5%;" disabled="">
+                    </div>
+                    <br><br>
+                    <br><br>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal footer -->
+    <div class="modal-footer">
+        <button type="button" class="btn" data-bs-dismiss="modal" style="margin-right: 4px; background-color: #8E9FAC; border-color: #8E9FAC;">
+            Cancelar</button>
+        <button type="button" class="btn" data-bs-dismiss="modal" style="margin-right: 4px; background-color: #B6B6B6; border-color: #8E9FAC;">
+            Guardar</button>
+        <button type="button" class="btn btn-danger"  style="background-color: #69A6B6; border-color: #69A6B6;" onclick="cargarUbicacion(event, 'Zoom')">
+            Siguiente
+        </button>
+    </div>
+
+</div>

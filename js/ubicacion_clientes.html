@@ -1,0 +1,89 @@
+<div class="container" id="content" style="background-color: #F5F5F5; border-radius: 20px; border-bottom: #14294d;">
+    <div class="container text-center">
+        <div class="row justify-content-md-center">
+
+            <br><br>
+
+            <div class="col-7 text-center">
+                <form action="/action_page.php">
+                    <br><br><br>
+                    <div class="input-group">
+                        <label for="txtDomicilio" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                            Domicilio:
+                        </label>
+                        <input type="text" id="txtDomicilio" name="txtDomicilio" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 5%;" required>
+                    </div>
+                    <br><br>
+                    <div class="input-group">
+                        <label for="txtCodigoPostal" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                            Código Postal:
+                        </label>
+                        <input type="text" id="txtCodigoPostal" name="txtCodigoPostal" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 5%;" required>
+
+                    </div>
+                    <br><br>
+                    <div class="input-group">
+
+                        <label for="estado" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                            Estado:
+                        </label>
+                        <select id="estado" name="estado" class="form-select" style="margin-right: 10px; width: 2%;" required>
+                            <option value="Aguascalientes">Aguascalientes</option>
+                            <option value="Baja California">Baja California</option>
+                            <option value="Baja California Sur">Baja California Sur</option>
+                            <option value="Campeche">Campeche</option>
+                            <option value="Coahuila">Coahuila</option>
+                            <option value="Colima">Colima</option>
+                            <option value="Chiapas">Chiapas</option>
+                            <option value="Chihuahua">Chihuahua</option>
+                            <option value="Ciudad de México">Ciudad de México</option>
+                            <option value="Durango">Durango</option>
+                            <option value="Guanajuato">Guanajuato</option>
+                            <option value="Guerrero">Guerrero</option>
+                            <option value="Hidalgo">Hidalgo</option>
+                            <option value="Jalisco">Jalisco</option>
+                            <option value="Estado de México">Estado de México</option>
+                            <option value="Michoacán">Michoacán</option>
+                            <option value="Morelos">Morelos</option>
+                            <option value="Nayarit">Nayarit</option>
+                            <option value="Nuevo León">Nuevo León</option>
+                            <option value="Oaxaca">Oaxaca</option>
+                            <option value="Puebla">Puebla</option>
+                            <option value="Querétaro">Querétaro</option>
+                            <option value="Quintana Roo">Quintana Roo</option>
+                            <option value="San Luis Potosí">San Luis Potosí</option>
+                            <option value="Sinaloa">Sinaloa</option>
+                            <option value="Sonora">Sonora</option>
+                            <option value="Tabasco">Tabasco</option>
+                            <option value="Tamaulipas">Tamaulipas</option>
+                            <option value="Tlaxcala">Tlaxcala</option>
+                            <option value="Veracruz">Veracruz</option>
+                            <option value="Yucatán">Yucatán</option>
+                            <option value="Zacatecas">Zacatecas</option>
+                        </select>
+
+                        <label for="txtCiudad" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                            Ciudad:
+                        </label>
+                        <input type="text" id="txtCiudad" name="txtCiudad" class="form-control" style="margin-right: 40px; width: 2%;" required>
+
+                    </div>
+
+                    <br><br>
+
+                    <br><br>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Modal footer -->
+    <div class="modal-footer">
+        <button type="button" class="btn" data-bs-dismiss="modal" style="margin-right: 4px; background-color: #8E9FAC; border-color: #8E9FAC;">
+            Cancelar</button>
+        <button type="button" class="btn" data-bs-dismiss="modal" style="margin-right: 4px; background-color: #B6B6B6; border-color: #8E9FAC;">
+            Guardar</button>
+        <button type="button" class="btn btn-danger"  style="background-color: #69A6B6; border-color: #69A6B6;" onclick="cargarContacto(event, 'Zoom')">
+            Siguiente
+        </button>
+    </div>
+</div>
