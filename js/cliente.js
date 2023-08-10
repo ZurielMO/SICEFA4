@@ -237,24 +237,9 @@ function crearClientes() {
 
 }
 
-function cambiarEstadoCliente(event, index) {
-    var checkbox = event.target;
-    var nuevoEstado = checkbox.checked ? 1 : 0;
-    clientes[index].activo = nuevoEstado;
-    cargarTablaClientes();
-}
-document.addEventListener("DOMContentLoaded", function () {
-    const tabs = document.querySelectorAll('.nav-link');
-    tabs.forEach(tab => {
-        tab.addEventListener('shown.bs.tab', function (event) {
-            const tabId = event.target.getAttribute('href');
-            const filtroActivo = tabId === '#activos' ? 'activos' : 'todos';
-            cargarTablaClientes(filtroActivo);
-        });
-    });
-});
 
-function cargarTablaClientes(filtroActivo) {
+
+function cargarTablaClientes() {
     let datosTabla = "";
     for (let i = 0; i < clientes.length; i++) {
 
@@ -263,11 +248,6 @@ function cargarTablaClientes(filtroActivo) {
             activo = "Activos";
         else
             activo = "Inactivo";
-if (filtroActivo === "activos" && clientes[i].activo !== 1) {
-            continue; // Ignora clientes inactivos si se eligió el filtro "Activos"
-        }
-
-        var activo = clientes[i].activo === 1 ? "Activos" : "Inactivo";
         datosTabla += "<tr>";
 
         datosTabla += "<td><a class='nav-link' href='#' style='color: black;'>" + clientes[i].idCliente + "</a></td>";
