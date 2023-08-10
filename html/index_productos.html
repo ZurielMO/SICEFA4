@@ -135,6 +135,11 @@
                                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal" style="background-color: #4EB1CA; border-color: #4EB1CA;">
                                         Agregar Nuevo
                                     </button>
+                                    <br>
+                                    <br>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModalTres" style="background-color: #4EB1CA; border-color: #4EB1CA;">
+                                        Inventario
+                                    </button>
 
 
                                 </div>
@@ -503,7 +508,63 @@
                                         </div>
                                     </div>
                                 </div>
+
                         
+                        <div class="modal" id="myModalTres">
+                                    <div class="modal-dialog modal-xl">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header" style="background-color: gray;">
+                                                <h4 class="modal-title" style="background-color: gray; color: white;">Modificar Producto</h4>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body d-flex justify-content-center align-items-center text-center">
+                                                <div class="col-lg-12">
+                                                    <br>
+                                                    <ul class="nav nav-underline justify-content-center align-items-center text-center">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#" style="color: #14294d;">
+                                                                <br>
+                                                            </a>
+                                                        </li>
+                                                        <p></p><p></p><p></p><p></p><p></p>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" style="color: #14294d;" onclick="cargarUbicacion(event, 'Zoom')">
+                                                                <i class="fa-solid fa-map-location-dot fa-xl"></i>
+                                                                <br>
+                                                                DATOS DE UBICACIÓN
+                                                            </a>
+                                                        </li>
+                                                        <p></p><p></p><p></p><p></p><p></p>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" style="color: #14294d;" onclick="cargarContacto(event, 'Zoom')">
+                                                                
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <br>
+                                                    <hr style="height:2px;border-width:0;color:gray;background-color:gray; width: 100%;">
+                                                    <br><br><br>
+                                                    
+                                                </div>
+                                                
+                                            </div>
+
+                                            
+
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn" data-bs-dismiss="modal" style="margin-right: 4px; background-color: #8E9FAC; border-color: #8E9FAC;">
+                                                    Cancelar</button>
+                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" style="background-color: #69A6B6; border-color: #69A6B6;" onclick="guadarProducto();">Guardar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                     </div>
 
