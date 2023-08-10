@@ -254,7 +254,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-function cargarTablaClientes() {
+function cargarTablaClientes(filtroActivo) {
     let datosTabla = "";
     for (let i = 0; i < clientes.length; i++) {
 
