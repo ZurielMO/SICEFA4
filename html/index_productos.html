@@ -365,51 +365,126 @@
                                                     <div id="content">
                                                         <h1>Formulario</h1>
                                                         <br>
-                                                        <div>
-                                                        <img id="imgFoto" src="" style="with: 156px; height:156px"/>
-                                                        <textarea id="txtaCódigoImagen" style="with: 156px"></textarea>
-                                                        </div>
-                                                        <div>
-                                                            <button id="btnSeleccionarImagen" class="btn btn-outline-success" onclick="leerFoto();"><i class="fas fa-upload"></i>&nbsp;&nbsp;Cargar Imagen</button>
-                                                        </div>
-                                                        <div>
-                                                            <input id="inputFileImagen" type="file" />
-                                                        </div>
-                                                        <div>
-                                                            <label class="labelEstiloF" for="txtIdProd">Id:</label>
-                                                            <input type="text" id="txtIdProdDos" required readonly><br>
-                                                            <br>
-                                                            <label class="labelEstiloF" for="txtNombreProd">Nombre comercial:</label>
-                                                            <input type="text" id="txtNombreProdDos" required><br>
-                                                            <br>
-                                                            <label class="labelEstiloF" for="txtFormaFar">Forma Farmaceutica:</label>
-                                                            <input type="text" id="txtFormaFarDos" required><br>
-                                                            <br>
-                                                            <label class="labelEstiloF" for="txtPresentacion">Presentación:</label>
-                                                            <input type="text" id="txtPresentacionDos" required><br>
-                                                            <br>
-                                                            <label class="labelEstiloF" for="txtPrincipalIndicacion">Principal Indicación:</label>
-                                                            <input type="text" id="txtPrincipalIndicacionDos" required><br>
-                                                            <br>
-                                                            <label class="labelEstiloF" for="txtConcentracion">Concentración:</label>
-                                                            <input type="text" id="txtConcentracionDos" required><br>
-                                                            <br>
-                                                        </div>
-                                                        <div>
-                                                            <label class="labelEstiloF" for="txtNombreGenerico">Nombre Genérico:</label>
-                                                            <input type="text" id="txtNombreGenericoDos" required><br>
-                                                            <br>
-                                                            <label class="labelEstiloF" for="txtUnidadMedida">Unidad de medida:</label>
-                                                            <input type="text" id="txtUnidadMedidaDos" required><br>
-                                                            <br>
-                                                            <label class="labelEstiloF" for="txtUnidadesEnvase">Unidades de envase:</label>
-                                                            <input type="text" id="txtUnidadesEnvaseDos" required><br>
-                                                            <br>
-                                                            <label class="labelEstiloF" for="txtContraindicaciones">Contraindicaciones:</label>
-                                                            <input type="text" id="txtContraindicacionesDos" required><br>
-                                                            <br>
-                                                            <label class="labelEstiloF" for="txtPrecioUnitario">Precio Unitario:</label>
-                                                            <input type="text" id="txtPrecioUnitarioDos" required><br>
+                                                        <div class="container text-center">
+                                                            <div class="row justify-content-md-center">
+                                                                <div class="col-4">
+                                                                    <br>
+                                                                    <div class="container text-center">
+                                                                        <div class="row justify-content-md-center">
+                                                                            <div class="col-1">
+
+                                                                            </div>
+                                                                            <div class="col-10">
+                                                                                <img id="imgFoto" src="" style="width: 156px; height: 156px;"/>
+                                                                                <textarea id="txtaCódigoImagen" style="with: 156px"></textarea>
+                                                                            </div>
+                                                                            <div class="col">
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <br>
+                                                                    <div class="container text-center">
+                                                                        <div class="row justify-content-md-center">
+                                                                            <div class="col-1">
+
+                                                                            </div>
+                                                                            <div class="col-10">
+                                                                                <button id="btnSeleccionarImagen" class="btn btn-outline-secondary" style="width: 256px;"
+                                                                                        onclick="leerFoto();"><i class="fas fa-upload"></i>
+                                                                                    &nbsp;&nbsp;Cargar Imagen</button> 
+                                                                            </div>
+                                                                            <div class="col">
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <br>
+                                                                    <div class="container text-center">
+                                                                        <div class="row justify-content-md-center">
+                                                                            <div class="col-1">
+
+                                                                            </div>
+                                                                            <div class="col-10">
+                                                                                <input id="inputFileImagen" type="file"/>
+                                                                            </div>
+                                                                            <div class="col">
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <br><br>
+                                                                    
+                                                                </div>
+
+                                                                <br><br>
+
+                                                                <div class="col-8">
+                                                                    <form action="/action_page.php">
+                                                                        <br><br><br>
+                                                                        <div class="input-group">
+                                                                            <label for="txtIdProd" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                                                                                Id:
+                                                                            </label>
+                                                                            <input type="text" id="txtIdProdDos" name="txtIdProd" class="form-control" placeholder="" style="margin-right: 10px; width: 5%;" disabled="">
+                                                                            <label for="txtNombreProd" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                                                                                Nombre Producto:
+                                                                            </label>
+                                                                            <input type="text" id="txtNombreProdDos" name="txtNombreProd" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 5%;" required>
+                                                                            <label for="txtNombreGenerico" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                                                                                Nombre Generico:
+                                                                            </label>
+                                                                            <input type="text" id="txtNombreGenericoDos" name="txtNombreGenerico" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 5%;" required>
+                                                                        </div>
+                                                                        <br><br>
+                                                                        <div class="input-group">
+                                                                            <label for="txtFormaFar" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                                                                                Forma Farmaceutica:
+                                                                            </label>
+                                                                            <input type="text" id="txtFormaFarDos" name="txtFormaFar" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 10%;" required>
+                                                                            <label for="txtUnidadMedida" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                                                                                Unidad de Medida:
+                                                                            </label>
+                                                                            <input type="text" id="txtUnidadMedidaDos" name="txtUnidadMedida" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 5%;" required>   
+                                                                        </div>
+                                                                        <br><br>
+                                                                        <div class="input-group">
+                                                                            <label for="txtPresentacion" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                                                                                Presentacion:
+                                                                            </label>
+                                                                            <input type="text" id="txtPresentacionDos" name="txtPresentacion" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 10%;" required>
+                                                                            <label for="txtUnidadesEnvase" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                                                                                Unidades de Envase:
+                                                                            </label>
+                                                                            <input type="text" id="txtUnidadesEnvaseDos" name="txtUnidadesEnvase" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 5%;" required>   
+                                                                        </div>
+                                                                        <br><br>
+                                                                        <div class="input-group">
+                                                                            <label for="txtPrincipalIndicacion" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                                                                                Principal Indicación:
+                                                                            </label>
+                                                                            <input type="text" id="txtPrincipalIndicacionDos" name="txtPrincipalIndicacion" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 10%;" required>
+                                                                            <label for="txtContraindicaciones" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                                                                                Contraindicaciones:
+                                                                            </label>
+                                                                            <input type="text" id="txtContraindicacionesDos" name="txtContraindicaciones" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 5%;" required>
+                                                                        </div>
+                                                                        <br><br>
+                                                                        <div class="input-group">
+                                                                            <label for="txtConcentracion" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                                                                                Concentración:
+                                                                            </label>
+                                                                            <input type="text" id="txtConcentracionDos" name="txtConcentracion" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 10%;" required>
+                                                                            
+                                                                            <label for="txtPrecioUnitario" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                                                                                Precio Unitario:
+                                                                            </label>
+                                                                            <input type="text" id="txtPrecioUnitarioDos" name="txtPrecioUnitario" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 5%;" required>
+                                                                        </div>
+                                                                        <br><br>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
