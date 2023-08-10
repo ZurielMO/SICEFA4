@@ -245,7 +245,7 @@ function cargarTablaProductos(){
         datosTabla+="<tr>";
         
 datosTabla+="<td><a class='nav-link' href='#' style='color: black;'>"+productos[i].idProd+"</a></td>";
-datosTabla+="<td><i class='fa-solid fa-pills fa-2xl' style='color: #fcfcfd;'></i></td>";
+datosTabla+="<td><i class='fa-solid fa-pills fa-2xl' style='color: #286c7d;'></i></td>";
 datosTabla+="<td><a class='nav-link' href='#' style='color: black;'>"+productos[i].nombreGenerico+"</a></td>";
 datosTabla+="<td><a class='nav-link' href='#' style='color: black;'>"+productos[i].precioUnitario+"</a></td>";
 datosTabla+="<td><label class='switch'><input type='checkbox'><span class='slider round'></span></label></td>";
@@ -449,7 +449,7 @@ function limpiarProd (){
 ////        datosTabla+="<tr>";
 //        
 //datosTabla+="<td><a class='nav-link' href='#' style='color: black;'>"+productos[incindecias[i]].idProducto+"</a></td>";
-//datosTabla+="<td><i class='fa-solid fa-pills fa-2xl' style='color: #fcfcfd;'></i></td>";
+//datosTabla+="<td><i class='fa-solid fa-pills fa-2xl' style='color: #286c7d;'></i></td>";
 //datosTabla+="<td><a class='nav-link' href='#' style='color: black;'>"+productos[incindecias[i]].nombreGenerico+"</a></td>";
 //datosTabla+="<td><a class='nav-link' href='#' style='color: black;'>"+productos[incindecias[i]].precioUnitario+"</a></td>";
 //datosTabla+="<td><label class='switch'><input type='checkbox'><span class='slider round'></span></label></td>";
