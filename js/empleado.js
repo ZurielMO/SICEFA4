@@ -299,7 +299,7 @@ function cargarTablaEmpleados() {
         datosTabla += "<td><a class='nav-link' href='#' style='color: black;'>" + empleados[i].telefono + "</a></td>";
         datosTabla += "<td><a class='nav-link' href='#' style='color: black;'>" + empleados[i].correoElectronico + "</a></td>";
         datosTabla += "<td><label class='switch'><input type='checkbox'><span class='slider round'></span></label></td>";
-        datosTabla += "<td><button class='botonessincontorno' class='btn btn-primary' type='button' data-bs-toggle='modal' data-bs-target='#myModalDos' onclick='modificarEmpleados(" + i + ");'><i class='fa-solid fa-pen-to-square fa-xl' style='color: #286c7d; margin-right: 20px; padding: 0; border:0; outline: none;'></i></button><button class='botonessincontorno' type='button' onclick='eliminarEmpleado(" + i + ");'><i class='fa-solid fa-trash fa-xl' style='color: #286c7d; padding: 0; border:0; outline: none;'></i></button></td>";
+        datosTabla += "<td><button class='botonessincontorno' class='btn btn-primary' type='button' data-bs-toggle='modal' data-bs-target='#myModalDos' onclick='modificarEmpleados(" + i + ");'><i class='fa-solid fa-pen-to-square fa-xl' style='color: #286c7d; margin-right: 20px; padding: 0; border:0; outline: none;'></i></button><button class='botonessincontorno' type='button' class='btn btn-primary' data-bs-toggle='modal' data-bs-target='#ModalEliminar' onclick='eliminarEmpleado(" + i + ");'><i class='fa-solid fa-trash fa-xl' style='color: #286c7d; padding: 0; border:0; outline: none;'></i></button></td>";
 
         datosTabla += "</tr>";
     }
