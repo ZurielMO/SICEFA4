@@ -249,7 +249,7 @@ datosTabla+="<td><i class='fa-solid fa-pills fa-2xl' style='color: #286c7d;'></i
 datosTabla+="<td><a class='nav-link' href='#' style='color: black;'>"+productos[i].nombreGenerico+"</a></td>";
 datosTabla+="<td><a class='nav-link' href='#' style='color: black;'>"+productos[i].precioUnitario+"</a></td>";
 datosTabla+="<td><label class='switch'><input type='checkbox'><span class='slider round'></span></label></td>";
-datosTabla+="<td><button class='botonessincontorno' class='btn btn-primary' type='button' data-bs-toggle='modal' data-bs-target='#myModalDos' onclick='modificarProd("+i+");'><i class='fa-solid fa-pen-to-square fa-xl' style='color: #286c7d; margin-right: 20px;'></i></button><button class='botonessincontorno' type='button' onclick='eliminarProd("+i+");'><i class='fa-solid fa-trash fa-xl' style='color: #286c7d;'></i></button></td>";
+datosTabla+="<td><button class='botonessincontorno' class='btn btn-primary' type='button' data-bs-toggle='modal' data-bs-target='#myModalDos' onclick='modificarProd("+i+");'><i class='fa-solid fa-pen-to-square fa-xl' style='color: #286c7d; margin-right: 20px;'></i></button><button class='botonessincontorno' class="btn btn-primary" data-bs-toggle="modal" data-bs-target='#ModalEliminar' type='button' onclick='eliminarProd("+i+");'><i class='fa-solid fa-trash fa-xl' style='color: #286c7d;'></i></button></td>";
 
     datosTabla+="</tr>"; 
     }
