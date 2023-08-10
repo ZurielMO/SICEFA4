@@ -167,27 +167,25 @@
                                                     <br>
                                                     <ul class="nav nav-underline justify-content-center align-items-center text-center">
                                                         <li class="nav-item">
-                                                            <a class="nav-link" style="color: #14294d;" onclick="cargarPersonales(event, 'Zoom')">
-                                                                <i class="fa-solid fa-address-card fa-xl"></i>
-                                                                <br>
-                                                                DATOS PERSONALES
+
+                                                            <br>
+
 
                                                             </a>
                                                         </li>
                                                         <p></p><p></p><p></p><p></p><p></p>
                                                         <li class="nav-item">
-                                                            <a class="nav-link" style="color: #14294d;" onclick="cargarUbicacion(event, 'Zoom')">
-                                                                <i class="fa-solid fa-map-location-dot fa-xl"></i>
+                                                            <a class="nav-link" style="color: #14294d;">
+                                                                <i class="fa-solid fa-address-card fa-xl"></i>
                                                                 <br>
-                                                                DATOS DE UBICACIÓN
+                                                                DATOS DE EMPLEADO
                                                             </a>
                                                         </li>
                                                         <p></p><p></p><p></p><p></p><p></p>
                                                         <li class="nav-item">
-                                                            <a class="nav-link" style="color: #14294d;" onclick="cargarContacto(event, 'Zoom')">
-                                                                <i class="fa-brands fa-telegram fa-xl"></i>
-                                                                <br>
-                                                                DATOS DE CONTACTO
+
+                                                            <br>
+
 
                                                             </a>
                                                         </li>
@@ -327,82 +325,51 @@
                                                                                 RFC:
                                                                             </label>
                                                                             <input type="text" id="txtRfc" name="txtRfc" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 10%;" required>
+                                                                            <label for="txtCorreo" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                                                                                Correo:
+                                                                            </label>
+                                                                            <input type="text" id="txtCorreo" name="txtCorreo" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 5%;" required>
+
                                                                         </div>
                                                                         <br><br>
                                                                         <div class="input-group">
                                                                             <label for="txtUsuario" style="background-color: #0CA789; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
                                                                                 Usuario:
                                                                             </label>
-                                                                            <input type="text" id="txtUsuario" name="txtUsuario" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 5%;" disabled="">
+                                                                            <input type="text" id="txtUsuario" name="txtUsuario" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 5%;" required="">
                                                                             <label for="txtContrasenia" style="background-color: #0CA789; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
                                                                                 Contraseña:
                                                                             </label>
-                                                                            <input type="text" id="txtContrasenia" name="txtContrasenia" class="form-control" placeholder="" style="margin-right: 10px; width: 5%;" disabled="">
+                                                                            <input type="text" id="txtContrasenia" name="txtContrasenia" class="form-control" placeholder="" style="margin-right: 10px; width: 5%;" required="">
+                                                                            <label for="txtTelefono" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                                                                                Telefono:
+                                                                            </label>
+                                                                            <input type="text" id="txtTelefono" name="txtTelefono" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 5%;" required>
+
                                                                         </div>
                                                                         <br><br>
                                                                         <div class="input-group">
                                                                             <label for="txtDomicilio" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
                                                                                 Domicilio:
                                                                             </label>
-                                                                            <input type="text" id="txtDomicilio" name="txtDomicilio" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 5%;" required>
+                                                                            <input type="text" id="txtDomicilio" name="txtDomicilio" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 10%;" required>
+
                                                                             <label for="txtCodigoPostal" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
                                                                                 Código Postal:
                                                                             </label>
-                                                                            <input type="text" id="txtCodigoPostal" name="txtCodigoPostal" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 5%;" required>
-                                                                            <label for="txtEstado" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
-                                                                                Estado:
-                                                                            </label>
-                                                                            <select id="txtEstado" name="txtEstado" class="form-select" style="margin-right: 10px; width: 2%;" required>
-                                                                                <option value="Aguascalientes">Aguascalientes</option>
-                                                                                <option value="Baja California">Baja California</option>
-                                                                                <option value="Baja California Sur">Baja California Sur</option>
-                                                                                <option value="Campeche">Campeche</option>
-                                                                                <option value="Coahuila">Coahuila</option>
-                                                                                <option value="Colima">Colima</option>
-                                                                                <option value="Chiapas">Chiapas</option>
-                                                                                <option value="Chihuahua">Chihuahua</option>
-                                                                                <option value="Ciudad de México">Ciudad de México</option>
-                                                                                <option value="Durango">Durango</option>
-                                                                                <option value="Guanajuato">Guanajuato</option>
-                                                                                <option value="Guerrero">Guerrero</option>
-                                                                                <option value="Hidalgo">Hidalgo</option>
-                                                                                <option value="Jalisco">Jalisco</option>
-                                                                                <option value="Estado de México">Estado de México</option>
-                                                                                <option value="Michoacán">Michoacán</option>
-                                                                                <option value="Morelos">Morelos</option>
-                                                                                <option value="Nayarit">Nayarit</option>
-                                                                                <option value="Nuevo León">Nuevo León</option>
-                                                                                <option value="Oaxaca">Oaxaca</option>
-                                                                                <option value="Puebla">Puebla</option>
-                                                                                <option value="Querétaro">Querétaro</option>
-                                                                                <option value="Quintana Roo">Quintana Roo</option>
-                                                                                <option value="San Luis Potosí">San Luis Potosí</option>
-                                                                                <option value="Sinaloa">Sinaloa</option>
-                                                                                <option value="Sonora">Sonora</option>
-                                                                                <option value="Tabasco">Tabasco</option>
-                                                                                <option value="Tamaulipas">Tamaulipas</option>
-                                                                                <option value="Tlaxcala">Tlaxcala</option>
-                                                                                <option value="Veracruz">Veracruz</option>
-                                                                                <option value="Yucatán">Yucatán</option>
-                                                                                <option value="Zacatecas">Zacatecas</option>
-                                                                            </select>
-
+                                                                            <input type="text" id="txtCodigoPostal" name="txtCodigoPostal" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 10%;" required>
                                                                         </div>
                                                                         <br><br>
                                                                         <div class="input-group">
-                                                                            <label for="txtCiudad" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
-                                                                                Ciudad
+                                                                            <label for="txtEstado" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                                                                                Estado:
                                                                             </label>
-                                                                            <input type="text" id="txtCiudad" name="txtCiudad" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 5%;" required>
-                                                                            <label for="txtTelefono" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
-                                                                                Telefono:
-                                                                            </label>
-                                                                            <input type="text" id="txtTelefono" name="txtTelefono" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 5%;" required>
-                                                                            <label for="txtCorreo" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
-                                                                                Correo:
-                                                                            </label>
-                                                                            <input type="text" id="txtCorreo" name="txtCorreo" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 5%;" required>
+                                                                            <input type="text" id="txtEstado" name="txtEstado" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 10%;" required>
 
+                                                                            <label for="txtCiudad" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                                                                                Ciudad:
+                                                                            </label>
+                                                                            <input type="text" id="txtCiudad" name="txtCiudad" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 10%;" required>
                                                                         </div>
                                                                         <br><br>
                                                                     </form>
@@ -448,32 +415,30 @@
                                         <div class="col-lg-12">
                                             <br>
                                             <ul class="nav nav-underline justify-content-center align-items-center text-center">
-                                                <li class="nav-item">
-                                                    <a class="nav-link" style="color: #14294d;" onclick="cargarPersonales(event, 'Zoom')">
-                                                        <i class="fa-solid fa-address-card fa-xl"></i>
-                                                        <br>
-                                                        DATOS PERSONALES
+                                                        <li class="nav-item">
 
-                                                    </a>
-                                                </li>
-                                                <p></p><p></p><p></p><p></p><p></p>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" style="color: #14294d;" onclick="cargarUbicacion(event, 'Zoom')">
-                                                        <i class="fa-solid fa-map-location-dot fa-xl"></i>
-                                                        <br>
-                                                        DATOS DE UBICACIÓN
-                                                    </a>
-                                                </li>
-                                                <p></p><p></p><p></p><p></p><p></p>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" style="color: #14294d;" onclick="cargarContacto(event, 'Zoom')">
-                                                        <i class="fa-brands fa-telegram fa-xl"></i>
-                                                        <br>
-                                                        DATOS DE CONTACTO
+                                                            <br>
 
-                                                    </a>
-                                                </li>
-                                            </ul>
+
+                                                            </a>
+                                                        </li>
+                                                        <p></p><p></p><p></p><p></p><p></p>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" style="color: #14294d;">
+                                                                <i class="fa-solid fa-address-card fa-xl"></i>
+                                                                <br>
+                                                                DATOS DE EMPLEADO
+                                                            </a>
+                                                        </li>
+                                                        <p></p><p></p><p></p><p></p><p></p>
+                                                        <li class="nav-item">
+
+                                                            <br>
+
+
+                                                            </a>
+                                                        </li>
+                                                    </ul>
                                             <br>
                                             <hr style="height:1.5px;border-width:0;color:gray;background-color:gray; width: 100%;">
 
@@ -609,82 +574,51 @@
                                                                         RFC:
                                                                     </label>
                                                                     <input type="text" id="txtRfcDos" name="txtRfc" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 10%;" required>
+                                                                    <label for="txtCorreoDos" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                                                                        Correo:
+                                                                    </label>
+                                                                    <input type="text" id="txtCorreoDos" name="txtCorreoDos" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 5%;" required>
+
                                                                 </div>
                                                                 <br><br>
                                                                 <div class="input-group">
                                                                     <label for="txtUsuario" style="background-color: #0CA789; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
                                                                         Usuario:
                                                                     </label>
-                                                                    <input type="text" id="txtUsuarioDos" name="txtUsuario" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 5%;" disabled="">
+                                                                    <input type="text" id="txtUsuarioDos" name="txtUsuario" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 5%;" required="">
                                                                     <label for="txtContrasenia" style="background-color: #0CA789; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
                                                                         Contraseña:
                                                                     </label>
-                                                                    <input type="text" id="txtContraseniaDos" name="txtContrasenia" class="form-control" placeholder="" style="margin-right: 10px; width: 5%;" disabled="">
-                                                                </div>
-                                                                <br><br>
-                                                                <div class="input-group">
-                                                                    <label for="txtDomicilio" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
-                                                                        Domicilio:
-                                                                    </label>
-                                                                    <input type="text" id="txtDomicilioDos" name="txtDomicilio" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 5%;" required>
-                                                                    <label for="txtCodigoPostal" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
-                                                                        Código Postal:
-                                                                    </label>
-                                                                    <input type="text" id="txtCodigoPostalDos" name="txtCodigoPostal" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 5%;" required>
-                                                                    <label for="txtEstado" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
-                                                                        Estado:
-                                                                    </label>
-                                                                    <select id="txtEstadoDos" name="txtEstado" class="form-select" style="margin-right: 10px; width: 2%;" required>
-                                                                        <option value="Aguascalientes">Aguascalientes</option>
-                                                                        <option value="Baja California">Baja California</option>
-                                                                        <option value="Baja California Sur">Baja California Sur</option>
-                                                                        <option value="Campeche">Campeche</option>
-                                                                        <option value="Coahuila">Coahuila</option>
-                                                                        <option value="Colima">Colima</option>
-                                                                        <option value="Chiapas">Chiapas</option>
-                                                                        <option value="Chihuahua">Chihuahua</option>
-                                                                        <option value="Ciudad de México">Ciudad de México</option>
-                                                                        <option value="Durango">Durango</option>
-                                                                        <option value="Guanajuato">Guanajuato</option>
-                                                                        <option value="Guerrero">Guerrero</option>
-                                                                        <option value="Hidalgo">Hidalgo</option>
-                                                                        <option value="Jalisco">Jalisco</option>
-                                                                        <option value="Estado de México">Estado de México</option>
-                                                                        <option value="Michoacán">Michoacán</option>
-                                                                        <option value="Morelos">Morelos</option>
-                                                                        <option value="Nayarit">Nayarit</option>
-                                                                        <option value="Nuevo León">Nuevo León</option>
-                                                                        <option value="Oaxaca">Oaxaca</option>
-                                                                        <option value="Puebla">Puebla</option>
-                                                                        <option value="Querétaro">Querétaro</option>
-                                                                        <option value="Quintana Roo">Quintana Roo</option>
-                                                                        <option value="San Luis Potosí">San Luis Potosí</option>
-                                                                        <option value="Sinaloa">Sinaloa</option>
-                                                                        <option value="Sonora">Sonora</option>
-                                                                        <option value="Tabasco">Tabasco</option>
-                                                                        <option value="Tamaulipas">Tamaulipas</option>
-                                                                        <option value="Tlaxcala">Tlaxcala</option>
-                                                                        <option value="Veracruz">Veracruz</option>
-                                                                        <option value="Yucatán">Yucatán</option>
-                                                                        <option value="Zacatecas">Zacatecas</option>
-                                                                    </select>
-
-                                                                </div>
-                                                                <br><br>
-                                                                <div class="input-group">
-                                                                    <label for="txtCiudad" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
-                                                                        Ciudad
-                                                                    </label>
-                                                                    <input type="text" id="txtCiudadDos" name="txtCiudad" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 5%;" required>
-                                                                    <label for="txtTelefono" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                                                                    <input type="text" id="txtContraseniaDos" name="txtContrasenia" class="form-control" placeholder="" style="margin-right: 10px; width: 5%;" required="">
+                                                                    <label for="txtTelefonoDos" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
                                                                         Telefono:
                                                                     </label>
-                                                                    <input type="text" id="txtTelefonoDos" name="txtTelefono" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 5%;" required>
-                                                                    <label for="txtCorreo" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
-                                                                        Correo:
-                                                                    </label>
-                                                                    <input type="text" id="txtCorreoDos" name="txtCorreo" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 5%;" required>
+                                                                    <input type="text" id="txtTelefonoDos" name="txtTelefonoDos" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 5%;" required>
 
+                                                                </div>
+                                                                <br><br>
+                                                                <div class="input-group">
+                                                                    <label for="txtDomicilioDos" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                                                                        Domicilio:
+                                                                    </label>
+                                                                    <input type="text" id="txtDomicilioDos" name="txtDomicilioDos" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 10%;" required>
+
+                                                                    <label for="txtCodigoPostalDos" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                                                                        Código Postal:
+                                                                    </label>
+                                                                    <input type="text" id="txtCodigoPostalDos" name="txtCodigoPostalDos" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 10%;" required>
+                                                                </div>
+                                                                <br><br>
+                                                                <div class="input-group">
+                                                                    <label for="txtEstadoDos" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                                                                        Estado:
+                                                                    </label>
+                                                                    <input type="text" id="txtEstadoDos" name="txtEstadoDos" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 10%;" required>
+
+                                                                    <label for="txtCiudadDos" style="background-color: #B6B6B6; color: white; padding: 4px; border-radius: 5px; margin-right: 6px;">
+                                                                        Ciudad:
+                                                                    </label>
+                                                                    <input type="text" id="txtCiudadDos" name="txtCiudadDos" class="form-control" placeholder="Escribe aquí..." style="margin-right: 10px; width: 10%;" required>
                                                                 </div>
                                                                 <br><br>
                                                             </form>
