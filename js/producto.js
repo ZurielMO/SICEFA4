@@ -1,177 +1,185 @@
 var productos=[];
 
 function crearProductos(){
-    let producto1={  
+    let producto1 = {  
     "idProd": 1,
-    "nombreProd": "Paracetamol",
-    "formaFar":"solidas",
-    "presentacion": "Tabletas",
-    "principalIndicacion": "Alivio del dolor y fiebre",
-    "concentracion": "500 mg",
-    "nombreGenerico": "Paracetamol",
-    "unidadMedida": "mg",
-    "unidadEnvase": "30 tabletas",
-    "contradicciones": "No usar en caso de alergia al paracetamol",
-    "precioUnitario": 10.50,
-    "estatus":"Activo",
-    "codBarras":289192834932,
-    "foto":"",
-    "rutaFoto":""
+    "nombre_producto": "Paracetamol",
+    "forma_farmaceutica": "Tableta",
+    "presentacion": "Caja",
+    "principal_indicacion": "Alivio del dolor",
+    "contradicciones": "Hipersensibilidad al paracetamol",
+    "concentracion": "500mg",
+    "nombre_generico": "Acetaminofén",
+    "unidad_medida": "mg",
+    "unidad_envase": "30 unidades",
+    "precio_unitario": 30.00,
+    "foto": "ruta_de_la_foto",
+    "ruta_foto": "ruta_de_la_ruta_foto",
+    "estatus": 1,
+    "codigo_barras": '1234567890'
+};
 
-    };
-    let producto2={  
+let producto2 = {  
     "idProd": 2,
-    "nombreProd": "Ibuprofeno",
-    "presentacion": "Cápsulas",
-    "formaFar":"solidas",
-    "principalIndicacion": "Reducción de inflamación y dolor",
-    "concentracion": "200 mg",
-    "nombreGenerico": "Ibuprofeno",
-    "unidadMedida": "mg",
-    "unidadEnvase": "20 cápsulas",
-    "contradicciones": "No usar junto con otros antiinflamatorios",
-    "precioUnitario": 12.75,
-    "estatus":"Activo",
-    "codBarras":927935487123,
-    "foto":"",
-    "rutaFoto":""
-    };
-    let producto3={
+    "nombre_producto": "Ibuprofeno",
+    "forma_farmaceutica": "Tableta",
+    "presentacion": "Caja",
+    "principal_indicacion": "Alivio del dolor",
+    "contradicciones": "Asma, úlcera péptica activa",
+    "concentracion": "400mg",
+    "nombre_generico": "Ibuprofeno",
+    "unidad_medida": "mg",
+    "unidad_envase": "20 unidades",
+    "precio_unitario": 40.00,
+    "foto": "ruta_de_la_foto",
+    "ruta_foto": "ruta_de_la_ruta_foto",
+    "estatus": 1,
+    "codigo_barras": '9876543210'
+};
+
+let producto3 = {  
     "idProd": 3,
-    "nombreProd": "Omeprazol",
-    "formaFar":"solidas",
-    "presentacion": "Tabletas",
-    "principalIndicacion": "Reducción de la acidez estomacal",
-    "concentracion": "20 mg",
-    "nombreGenerico": "Omeprazol",
-    "unidadMedida": "mg",
-    "unidadEnvase": "14 tabletas",
-    "contradicciones": "No usar en caso de alergia al omeprazol",
-    "precioUnitario": 8.90,
-    "estatus":"Activo",
-    "codBarras":904765345812,
-    "foto":"",
-    "rutaFoto":""
-    };
-    let producto4={
+    "nombre_producto": "Omeprazol",
+    "forma_farmaceutica": "Cápsula",
+    "presentacion": "Frasco",
+    "principal_indicacion": "Acidez gástrica",
+    "contradicciones": "Hipersensibilidad al omeprazol",
+    "concentracion": "20mg",
+    "nombre_generico": "Omeprazol",
+    "unidad_medida": "mg",
+    "unidad_envase": "60 cápsulas",
+    "precio_unitario": 20.00,
+    "foto": "ruta_de_la_foto",
+    "ruta_foto": "ruta_de_la_ruta_foto",
+    "estatus": 1,
+    "codigo_barras": '5432109876'
+};
+
+let producto4 = {  
     "idProd": 4,
-    "nombreProd": "Amoxicilina",
-    "formaFar":"solidas",
-    "presentacion": "Suspensión",
-    "principalIndicacion": "Tratamiento de infecciones bacterianas",
-    "concentracion": "250 mg/5 ml",
-    "nombreGenerico": "Amoxicilina",
-    "unidadMedida": "mg/5 ml",
-    "unidadEnvase": "100 ml",
-    "contradicciones": "Consultar con el médico en caso de alergias",
-    "precioUnitario": 15.20,
-    "estatus":"Activo",
-    "codBarras":135287456932,
-    "foto":"",
-    "rutaFoto":""
-    };
-    let producto5={
+    "nombre_producto": "Amoxicilina",
+    "forma_farmaceutica": "Cápsula",
+    "presentacion": "Frasco",
+    "principal_indicacion": "Infecciones bacterianas",
+    "contradicciones": "Alergia a la penicilina",
+    "concentracion": "500mg",
+    "nombre_generico": "Amoxicilina",
+    "unidad_medida": "mg",
+    "unidad_envase": "30 cápsulas",
+    "precio_unitario": 50.00,
+    "foto": "ruta_de_la_foto",
+    "ruta_foto": "ruta_de_la_ruta_foto",
+    "estatus": 1,
+    "codigo_barras": '0123456789'
+};
+
+let producto5 = {  
     "idProd": 5,
-    "nombreProd": "Loratadina",
-    "formaFar":"solidas",
-    "presentacion": "Tabletas",
-    "principalIndicacion": "Alivio de la alergia",
-    "concentracion": "10 mg",
-    "nombreGenerico": "Loratadina",
-    "unidadMedida": "mg",
-    "unidadEnvase": "30 tabletas",
-    "Contradicciones": "No recomendado en embarazo",
-    "precioUnitario": 9.75,
-    "estatus":"Activo",
-    "codBarras":923734571298,
-    "foto":"",
-    "rutaFoto":""
-    };
-    let producto6={
+    "nombre_producto": "Loratadina",
+    "forma_farmaceutica": "Tableta",
+    "presentacion": "Caja",
+    "principal_indicacion": "Alivio de la alergia",
+    "contradicciones": "Embarazo y lactancia",
+    "concentracion": "10mg",
+    "nombre_generico": "Loratadina",
+    "unidad_medida": "mg",
+    "unidad_envase": "24 unidades",
+    "precio_unitario": 45.00,
+    "foto": "ruta_de_la_foto",
+    "ruta_foto": "ruta_de_la_ruta_foto",
+    "estatus": 1,
+    "codigo_barras": '7654321098'
+};
+
+let producto6 = {  
     "idProd": 6,
-    "nombreProd": "Cetirizina",
-    "formaFar":"solidas",
-    "presentacion": "Jarabe",
-    "principalIndicacion": "Alivio de síntomas alérgicos",
-    "concentracion": "5 mg/5 ml",
-    "nombreGenerico": "Cetirizina",
-    "unidadMedida": "mg/5 ml",
-    "unidadEnvase": "120 ml",
-    "contradicciones": "Consultar con el médico si se están tomando otros medicamentos",
-    "precioUnitario": 11.50,
-    "estatus":"Activo",
-    "codBarras":784732154368,
-    "foto":"",
-    "rutaFoto":""
-    };
-    let producto7={
+    "nombrerod": "Aspirina",
+    "forma_far": "Tableta",
+    "presentacion": "Caja",
+    "principal_indicacion": "Alivio del dolor",
+    "contradicciones": "Alergia al ácido acetilsalicílico",
+    "concentracion": "500mg",
+    "nombre_generico": "Ácido Acetilsalicílico",
+    "unidad_medida": "mg",
+    "unidad_envase": "20 unidades",
+    "precio_unitario": 55.00,
+    "foto": "ruta_de_la_foto",
+    "ruta_foto": "ruta_de_la_ruta_foto",
+    "estatus": 1,
+    "codigo_barras": '1357924680'
+};
+
+let producto7 = {  
     "idProd": 7,
-    "nombreProd": "Aspirina",
-    "formaFar":"solidas",
-    "presentacion": "Tabletas",
-    "principalIndicacion": "Alivio del dolor y fiebre",
-    "concentracion": "500 mg",
-    "nombreGenerico": "Ácido acetilsalicílico",
-    "unidadMedida": "mg",
-    "unidadEnvase": "40 tabletas",
-    "contradicciones": "Evitar en caso de úlceras estomacales",
-    "precioUnitario": 7.20,
-    "estatus":"Activo",
-    "codBarras":923828341234,
-    "foto":"",
-    "rutaFoto":""
-    };
-    let producto8={
+    "nombre_producto": "Ciprofloxacino",
+    "forma_farmaceutica": "Tableta",
+    "presentacion": "Caja",
+    "principal_indicacion": "Infecciones bacterianas",
+    "contradicciones": "Embarazo y lactancia",
+    "concentracion": "500mg",
+    "nombre_generico": "Ciprofloxacino",
+    "unidad_medida": "mg",
+    "unidad_envase": "14 unidades",
+    "precio_unitario": 80.00,
+    "foto": "ruta_de_la_foto",
+    "ruta_foto": "ruta_de_la_ruta_foto",
+    "estatus": 1,
+    "codigo_barras": '2468135790'
+};
+
+let producto8 = {  
     "idProd": 8,
-    "nombreProd": "Vitamina C",
-    "formaFar":"solidas",
-    "presentacion": "Tabletas efervescentes",
-    "principalIndicacion": "Suplemento de vitamina C",
-    "concentracion": "1000 mg",
-    "nombreGenerico": "Ácido ascórbico",
-    "unidadMedida": "mg",
-    "unidadEnvase": "20 tabletas",
-    "contradicciones": "Evitar en caso de cálculos renales",
-    "precioUnitario": 6.90,
-    "estatus":"Activo",
-    "codBarras":984331188231,
-    "foto":"",
-    "rutaFoto":""
-    };
-    let producto9={
+    "nombre_producto": "Paracetamol Infantil",
+    "forma_farmaceutica": "Jarabe",
+    "presentacion": "Frasco",
+    "principal_indicacion": "Alivio del dolor en niños",
+    "contradicciones": "Hipersensibilidad al paracetamol",
+    "concentracion": "120mg/5ml",
+    "nombre_generico": "Acetaminofén",
+    "unidad_medida": "ml",
+    "unidad_envase": "100 ml",
+    "precio_unitario": 35.00,
+    "foto": "ruta_de_la_foto",
+    "ruta_foto": "ruta_de_la_ruta_foto",
+    "estatus": 1,
+    "codigo_barras": '9876543210'
+};
+
+let producto9 = {  
     "idProd": 9,
-    "nombreProd": "Diclofenaco",
-    "formaFar":"solidas",
-    "presentacion": "Gel",
-    "principalIndicacion": "Alivio tópico de dolor e inflamación",
-    "concentracion": "1%",
-    "nombreGenerico": "Diclofenaco sódico",
-    "unidadMedida": "%",
-    "unidadEnvase": "30 g",
-    "contradicciones": "No aplicar en piel irritada",
-    "precioUnitario": 14.50,
-    "estatus":"Activo",
-    "codBarras":948739120932,
-    "foto":"",
-    "rutaFoto":""
-    };
-    let producto10={
+    "nombre_producto": "Lansoprazol",
+    "forma_farmaceutica": "Cápsula",
+    "presentacion": "Frasco",
+    "principal_indicacion": "Acidez gástrica",
+    "contradicciones": "Embarazo y lactancia",
+    "concentracion": "30mg",
+    "nombre_generico": "Lansoprazol",
+    "unidad_medida": "mg",
+    "unidad_envase": "28 cápsulas",
+    "precio_unitario": 25.00,
+    "foto": "ruta_de_la_foto",
+    "ruta_foto": "ruta_de_la_ruta_foto",
+    "estatus": 1,
+    "codigo_barras": '0123456789'
+};
+
+let producto10 = {  
     "idProd": 10,
-    "nombreProd": "Salbutamol",
-    "formaFar":"solidas",
-    "presentacion": "Inhalador",
-    "principalIndicacion": "Alivio de síntomas asmáticos",
-    "concentracion": "100 mcg",
-    "nombreGenerico": "Salbutamol",
-    "unidadMedida": "mcg",
-    "unidadEnvase": "1 inhalador",
-    "contradicciones": "No usar en exceso, consultar al médico",
-    "precioUnitario": 22.00,
-    "estatus":"Activo",
-    "codBarras":563822987450,
-    "foto":"",
-    "rutaFoto":""
-    };
+    "nombre_producto": "Diclofenaco",
+    "formaFar": "Tableta",
+    "presentacion": "Caja",
+    "principal_indicacion": "Alivio del dolor",
+    "contradicciones": "Úlcera péptica activa",
+    "concentracion": "100mg",
+    "nombre_generico": "Diclofenaco",
+    "unidad_medida": "mg",
+    "unidad_envase": "10 unidades",
+    "precio_unitario": 70.00,
+    "foto": "ruta_de_la_foto",
+    "rutaFoto": "ruta_de_la_ruta_foto",
+    "estatus": 1,
+    "codBarras": '5432109876'
+};
     
     
 //    let usuario1={
@@ -246,8 +254,8 @@ function cargarTablaProductos(){
         
 datosTabla+="<td><a class='nav-link' href='#' style='color: black;'>"+productos[i].idProd+"</a></td>";
 datosTabla+="<td><i class='fa-solid fa-pills fa-2xl' style='color: #286c7d;'></i></td>";
-datosTabla+="<td><a class='nav-link' href='#' style='color: black;'>"+productos[i].nombreGenerico+"</a></td>";
-datosTabla+="<td><a class='nav-link' href='#' style='color: black;'>"+productos[i].precioUnitario+"</a></td>";
+datosTabla+="<td><a class='nav-link' href='#' style='color: black;'>"+productos[i].nombre_generico+"</a></td>";
+datosTabla+="<td><a class='nav-link' href='#' style='color: black;'>"+productos[i].precio_unitario+"</a></td>";
 datosTabla+="<td><label class='switch'><input type='checkbox'><span class='slider round'></span></label></td>";
 datosTabla+="<td><button class='botonessincontorno' class='btn btn-primary' type='button' data-bs-toggle='modal' data-bs-target='#myModalDos' onclick='modificarProd("+i+");'><i class='fa-solid fa-pen-to-square fa-xl' style='color: #286c7d; margin-right: 20px;'></i></button><button class='botonessincontorno' class='btn btn-primary' data-bs-toggle='modal' data-bs-target='#ModalEliminar' type='button' onclick='eliminarProd("+i+");'><i class='fa-solid fa-trash fa-xl' style='color: #286c7d;'></i></button></td>";
 
@@ -265,16 +273,16 @@ function eliminarProd (i){
 function modificarProd (i){
     //Datos producto
     document.getElementById("txtIdProdDos").value=productos[i].idProd;
-    document.getElementById("txtNombreProdDos").value=productos[i].nombreProd;
-    document.getElementById("txtFormaFarDos").value=productos[i].formaFar;
+    document.getElementById("txtNombreProdDos").value=productos[i].nombre_producto;
+    document.getElementById("txtFormaFarDos").value=productos[i].forma_farmaceutica;
     document.getElementById("txtPresentacionDos").value=productos[i].presentacion;
-    document.getElementById("txtPrincipalIndicacionDos").value=productos[i].principalIndicacion;
+    document.getElementById("txtPrincipalIndicacionDos").value=productos[i].principal_indicacion;
     document.getElementById("txtConcentracionDos").value=productos[i].concentracion;
-    document.getElementById("txtNombreGenericoDos").value=productos[i].nombreGenerico;
-    document.getElementById("txtUnidadMedidaDos").value=productos[i].unidadMedida;
-    document.getElementById("txtUnidadesEnvaseDos").value=productos[i].unidadEnvase;
+    document.getElementById("txtNombreGenericoDos").value=productos[i].nombre_generico;
+    document.getElementById("txtUnidadMedidaDos").value=productos[i].unidad_medida;
+    document.getElementById("txtUnidadesEnvaseDos").value=productos[i].unidad_envase;
     document.getElementById("txtContraindicacionesDos").value=productos[i].contradicciones;
-    document.getElementById("txtPrecioUnitarioDos").value=productos[i].precioUnitario;
+    document.getElementById("txtPrecioUnitarioDos").value=productos[i].precio_unitario;
 }
 
 function guadarProducto(){
@@ -293,16 +301,16 @@ function guadarProducto(){
    
     let producto1={  
     "idProd": idP,
-    "nombreProd": nomProd,
-    "formaFar":formFar,
+    "nombre_producto": nomProd,
+    "forma_farmaceutica":formFar,
     "presentacion": pres,
-    "principalIndicacion": prinInd,
+    "principal_indicacion": prinInd,
     "concentracion": concen,
-    "nombreGenerico": nomGen,
-    "unidadMedida": uM,
-    "unidadEnvase": uE,
+    "nombre_generico": nomGen,
+    "unidad_medida": uM,
+    "unidad_envase": uE,
     "Contradicciones": cI,
-    "precioUnitario": pU
+    "precio_unitario": pU
     
 
     };
@@ -356,16 +364,16 @@ function AgregarProducto(){
    
     let producto1={  
     "idProd": idP,
-    "nombreProd": nomProd,
-    "formaFar":formFar,
+    "nombre_producto": nomProd,
+    "forma_farmaceutica":formFar,
     "presentacion": pres,
-    "principalIndicacion": prinInd,
+    "principal_indicacion": prinInd,
     "concentracion": concen,
-    "nombreGenerico": nomGen,
-    "unidadMedida": uM,
-    "unidadEnvase": uE,
+    "nombre_generico": nomGen,
+    "unidad_medida": uM,
+    "unidad_envase": uE,
     "Contradicciones": cI,
-    "precioUnitario": pU
+    "precio_unitario": pU
     
 
     };
@@ -492,8 +500,8 @@ function buscarProd() {
             datosTabla += "<tr>";
             datosTabla += "<td><a class='nav-link' href='#' style='color: black;'>" + productos[incidencias[i]].idProd + "</a></td>";
             datosTabla += "<td><i class='fa-solid fa-circle-user fa-2xl' style='color: #286c7d;'></i></td>";
-            datosTabla += "<td><a class='nav-link' href='#' style='color: black;'>" + productos[incidencias[i]].nombreGenerico + "</a></td>";
-            datosTabla += "<td><a class='nav-link' href='#' style='color: black;'>" + productos[incidencias[i]].precioUnitario + "</a></td>";
+            datosTabla += "<td><a class='nav-link' href='#' style='color: black;'>" + productos[incidencias[i]].nombre_generico + "</a></td>";
+            datosTabla += "<td><a class='nav-link' href='#' style='color: black;'>" + productos[incidencias[i]].precio_unitario + "</a></td>";
             datosTabla += "<td><label class='switch'><input type='checkbox'><span class='slider round'></span></label></td>";
             datosTabla += "<td><button class='botonessincontorno' type='button' onclick='modificarProd(" + incidencias[i] + ");'><i class='fa-solid fa-pen-to-square fa-xl' style='color: #286c7d; margin-right: 20px;'></i></button><button class='botonessincontorno' type='button' onclick='eliminarProd(" + incidencias[i] + ");'><i class='fa-solid fa-trash fa-xl' style='color: #286c7d;'></i></button></td>";
             datosTabla += "</tr>";
