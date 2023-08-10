@@ -319,7 +319,7 @@
                                             <div class="modal-footer">
                                                 <button type="button" class="btn" data-bs-dismiss="modal" style="margin-right: 4px; background-color: #8E9FAC; border-color: #8E9FAC;">
                                                     Cancelar</button>
-                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" style="background-color: #69A6B6; border-color: #69A6B6;" onclick="AgregarProducto();">Agregar</button>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target='#ModalAgregar' style="background-color: #69A6B6; border-color: #69A6B6;" onclick="AgregarProducto();">Agregar</button>
                                             </div>
                                         </div>
                                     </div>
@@ -503,7 +503,7 @@
                                             <div class="modal-footer">
                                                 <button type="button" class="btn" data-bs-dismiss="modal" style="margin-right: 4px; background-color: #8E9FAC; border-color: #8E9FAC;">
                                                     Cancelar</button>
-                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" style="background-color: #69A6B6; border-color: #69A6B6;" onclick="guadarProducto();">Guardar</button>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target='#ModalModificar' style="background-color: #69A6B6; border-color: #69A6B6;" onclick="guadarProducto();">Guardar</button>
                                             </div>
                                         </div>
                                     </div>
@@ -605,7 +605,64 @@
                                 </div>
 
                     </div>
-
+                     <div class="modal fade" id="ModalModificar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Exito</h1>
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       Se ha guardado con exito!
+       <br>
+       <br>
+       <img src="../img2/marca-de-verificacion.png" style="width: 156px; height: 156px;" alt=""/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+                    <div class="modal fade" id="ModalAgregar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Exito</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       Se ha agregado con exito!
+       <br>
+       <br>
+       <img src="../img2/marca-de-verificacion.png" style="width: 156px; height: 156px;" alt=""/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+                    <div class="modal fade" id="ModalEliminar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Exito</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       Se ha eliminado con exito!
+       <br>
+       <br>
+       <img src="../img2/marca-de-verificacion.png" style="width: 156px; height: 156px;" alt=""/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
                     <br><br>
 
                     <form class="d-flex" role="search">
